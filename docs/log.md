@@ -12,6 +12,14 @@
 
 ## Histórico Cronológico de Sessões
 
+### [2026-11-18] Elevação Estética V2 (Padrão Design Studio & Gastronomia)
+- **O que foi feito:**
+  1. **Hero com Atmosfera Costeira:** Substituído o degradê abstrato escuro por overlay fotográfico real do pôr do sol de Canto Grande e barra de status unificada (🌿 Pé na Areia • 🌳 Sombra de Árvores Nativas • ⭐ 4.7 no Google • 🍺 Chopp Gelado).
+  2. **Bento Grid Editorial de Localização:** Substituído o padrão repetitivo de cards idênticos por um Bento Grid assimétrico (Card Herói verde-floresta da sombra natural, Card Sunset terracota/âmbar, Estrutura de praia gratuita e Encruzilhada Canto Grande/Mariscal).
+  3. **Fotografia Gastronômica no Cardápio:** Integrada fotografia apetitosa de alta fidelidade em todos os pratos (Anchova grelhada, Picanha, Parmegiana, Polvo, Burgers artesanais, Torres de Chopp e Pina Colada no Abacaxi).
+  4. **Eliminação do Ruído Visual:** Substituídos os botões verdes maciços repetitivos por elegantes botões integrados com ícone e chevron.
+  5. **Auditoria Visual & Playwright:** 100% aprovado em Mobile, Tablet e Desktop com 0 erros de console e screenshots atualizados em docs/screenshots/.
+
 ### [2026-11-18] Criação Completa da Landing Page, Cardápio e Auditoria Playwright
 - **O que foi feito:**
   1. **Auditoria Forense de Fontes:** Inspeção profunda no Instagram `@containerparadaobrigatoria` e Google Maps (Canto Grande / Mariscal). Download e decodificação do PDF oficial de 9 páginas com 100% dos pratos e preços.
