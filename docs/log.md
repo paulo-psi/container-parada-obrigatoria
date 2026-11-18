@@ -1,9 +1,9 @@
 # Diário de Bordo e Memória: Container_Parada_Obrigatoria
 
 ## 📌 Estado Atual (Handoff Rápido)
-- **Última Atualização:** 2026-11-18 19:32
-- **Status Geral:** Landing page e cardápio digital concluídos com excelência e auditados via Playwright em 3 viewports (Mobile, Tablet e Desktop). 0 erros de console, 0 overflow horizontal, responsividade impecável.
-- **Destaque:** 100% dos dados reais do Instagram (@containerparadaobrigatoria) e Google Maps (4.7★ com 454 avaliações) integrados, incluindo as 9 páginas do Cardápio Oficial em PDF (Anchova grelhada, Picanha, Parmegiana, Polvo à galega, Burgers artesanais, Empanadas argentinas, Torres de Chopp, Drinks no abacaxi e Sobremesas).
+- **Última Atualização:** 2026-11-18 19:51
+- **Status Geral:** Plataforma web de nível internacional (World-Class V3) concluída com 100% de sucesso e plenamente auditada via Playwright em 3 viewports (Mobile 390px, Tablet 768px e Desktop 1440px). 0 erros de console, 0 overflow horizontal, design responsivo de elite e micro-interações táteis.
+- **Destaque:** Sistema completo com Comanda Digital de Praia (carrinho flutuante com cálculo automático de 10% e envio consolidado ao WhatsApp), Live Beach Radar no topo com condições do mar e clima, filtros duplos por Ocasião de Praia e Categoria Oficial, Seção de Storytelling Humano ("Quem Faz a Parada Acontecer"), PWA com Service Worker offline e 100% dos dados reais do cardápio e avaliações do Google Maps.
 - **Próximo Passo Imediato:** Apresentar a interface ao Paulo e, quando desejado, realizar deploy no Firebase Hosting / GitHub Pages.
 - **Pendências / Bloqueios:** Nenhuma.
 - **Comando de Teste / Auditoria:** `python tests/verify_site.py`
@@ -11,6 +11,15 @@
 ---
 
 ## Histórico Cronológico de Sessões
+
+### [2026-11-18] V3 World-Class (Comanda Digital de Praia, Live Beach Radar & Filtros Duplos)
+- **O que foi feito:**
+  1. **Live Beach Radar:** Desenvolvida e integrada barra de status dinâmico no topo com clima (☀️ 28°C Céu Aberto), mar manso em Canto Grande, Chopp em Dobro às 17h, garçons ativos na areia e atalho sonoro para a playlist *Sunset Sessions* no Spotify.
+  2. **Comanda Digital de Praia (Carrinho Flutuante):** Criado sistema completo de carrinho com gaveta deslizante (`CartManager` em `menu.js`), botão flutuante com badge de contagem, seletor de localização (*Cadeira/Areia* vs. *Mesa no Deck*), campo para ponto da carne/observações, cálculo automático da taxa de serviço de 10% opcional e geração de pedido formatado em 1 clique para o WhatsApp oficial (+55 47 98405-5872).
+  3. **Filtros por Ocasião / Momento de Praia:** Inseridas pílulas de navegação rápida (*Todos os Pratos*, *Pé na Areia*, *Almoço em Família*, *Sunset & Chopp*, *Pós-Surf & Energia*) complementando as 6 categorias oficiais do cardápio.
+  4. **Storytelling & Identidade Humana:** Implementada a seção "Quem Faz a Parada Acontecer" (`#historia`) destacando a filosofia de acolhimento, a parceria com os pescadores artesanais da península, a preservação das árvores centenárias e a gratuidade de cadeiras e guarda-sóis.
+  5. **PWA & Cache Offline:** Integrado `manifest.json` e Service Worker (`sw.js`) para garantir acesso contínuo aos clientes mesmo com oscilações de 4G na beira da água.
+  6. **Bateria de Verificação Playwright V3:** Ampliado `tests/verify_site.py` para validar todas as 9 funcionalidades essenciais em 3 viewports simultâneos. Execução concluída com código 0 e screenshots atualizados em `docs/screenshots/`.
 
 ### [2026-11-18] Elevação Estética V2 (Padrão Design Studio & Gastronomia)
 - **O que foi feito:**

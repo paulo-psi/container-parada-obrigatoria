@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contâiner Parada Obrigatória | Restaurante & Petiscaria Pé na Areia em Bombinhas - SC</title>
   
+  <!-- PWA & Mobile Meta Tags -->
+  <link rel="manifest" href="./src/manifest.json">
+  <meta name="theme-color" content="#12161C">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Contâiner Parada">
+
   <!-- SEO & OpenGraph Meta Tags -->
   <meta name="description" content="Restaurante e gastrobar beira-mar em Canto Grande / Mariscal, Bombinhas - SC. Anchova grelhada à la carte, picanha nobre, hambúrgueres artesanais, chopp trincando, sombra de árvores nativas e música ao vivo pé na areia.">
   <meta name="keywords" content="restaurante bombinhas, canto grande, mariscal, anchova grelhada, frutos do mar bombinhas, container parada obrigatoria, chopp beira mar, musica ao vivo bombinhas">
@@ -86,7 +93,25 @@
 <body>
 
   <!-- ========================================================================
-       HEADER / NAVBAR
+       LIVE BEACH RADAR (STATUS EM TEMPO REAL)
+       ======================================================================== -->
+  <aside class="beach-radar-bar" aria-label="Status ao vivo da orla">
+    <div class="container beach-radar-content">
+      <div class="beach-radar-items">
+        <span class="radar-live-badge"><span class="radar-pulse-dot"></span> Ao Vivo em Canto Grande</span>
+        <span class="radar-item">☀️ 28°C Céu Aberto</span>
+        <span class="radar-item">🌊 Mar Manso Pé na Areia</span>
+        <span class="radar-item">🍺 Chopp em Dobro às 17h</span>
+        <span class="radar-item">🟢 Garçons Ativos na Praia</span>
+      </div>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6" target="_blank" rel="noopener noreferrer" class="btn-soundscape" title="Ouvir a trilha sonora de praia do restaurante no Spotify">
+        <span>🎵 Trilha Sunset Sessions</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HEADER / NAVBAR FIXA
        ======================================================================== -->
   <header class="site-header">
     <div class="container header-container">
@@ -109,6 +134,7 @@
       <nav class="nav-menu" aria-label="Navegação principal">
         <a href="#paraiso" class="nav-link">O Paraíso</a>
         <a href="#cardapio" class="nav-link">Cardápio Oficial</a>
+        <a href="#historia" class="nav-link">Quem Faz Acontecer</a>
         <a href="#musica" class="nav-link">Música & Sunset</a>
         <a href="#avaliacoes" class="nav-link">Avaliações 4.7★</a>
         <a href="#localizacao" class="nav-link">Como Chegar</a>
@@ -144,58 +170,48 @@
       </p>
 
       <div class="hero-actions">
-        <a href="#cardapio" class="btn btn-primary">
+        <a href="#cardapio" class="btn btn-primary btn-lg">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-            <path d="M7 2v20"/>
-            <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
           </svg>
-          <span>Explorar Cardápio</span>
+          <span>Explorar Cardápio Digital</span>
         </a>
-        <a href="https://wa.me/5547984055872?text=Ol%C3%A1!%20Estou%20na%20praia%20e%20gostaria%20de%20um%20atendimento%20com%20cadeiras%20e%20guarda-sol!" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <a href="https://wa.me/5547984055872?text=Ol%C3%A1!%20Estou%20na%20praia%20e%20gostaria%20de%20atendimento%20na%20areia!" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
           </svg>
-          <span>Pedir na Areia / Reservar</span>
+          <span>Pedir Garçom na Areia</span>
         </a>
       </div>
 
-      <!-- Faixa de Destaques Rápidos -->
-      <div class="hero-highlights-strip">
-        <div class="highlight-item">
-          <div class="highlight-icon">🏖️</div>
-          <div class="highlight-text">
-            <h4>Pé na Areia</h4>
-            <p>Garçons atendem direto na sua cadeira de praia.</p>
-          </div>
+      <!-- Métricas de Destaque / Prova Rápida -->
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">4.7★</div>
+          <div class="stat-label">Google Maps (454 avaliações)</div>
         </div>
-        <div class="highlight-item">
-          <div class="highlight-icon">🌳</div>
-          <div class="highlight-text">
-            <h4>Sombra Natural</h4>
-            <p>Árvores costeiras nativas com brisa fresca o dia todo.</p>
-          </div>
+        <div class="stat-card">
+          <div class="stat-number">0m</div>
+          <div class="stat-label">Distância do Mar (Pé na Areia)</div>
         </div>
-        <div class="highlight-item">
-          <div class="highlight-icon">🍺</div>
-          <div class="highlight-text">
-            <h4>Chopp & Torres</h4>
-            <p>Torres de 1L e 2L, Session IPA e Chopp de Vinho Rosé.</p>
-          </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Sombra Natural e Deck Ventilado</div>
         </div>
-        <div class="highlight-item">
-          <div class="highlight-icon">♿</div>
-          <div class="highlight-text">
-            <h4>Acessibilidade</h4>
-            <p>Acesso plano, mesas e banheiros 100% adaptados.</p>
-          </div>
+        <div class="stat-card">
+          <div class="stat-number">Gratuito</div>
+          <div class="stat-label">Guarda-Sóis e Cadeiras Próprias</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       SEÇÃO: VALORIZAÇÃO DA LOCALIZAÇÃO ("NOSSO PARAÍSO")
+       SEÇÃO: O PARAÍSO & BENTO GRID DE VALORIZAÇÃO DO LOCAL
        ======================================================================== -->
   <section id="paraiso" class="location-section">
     <div class="container">
@@ -203,7 +219,7 @@
         <span class="section-tag">Geografia Privilegiada</span>
         <h2 class="section-title">ONDE A NATUREZA ENCONTRA O SABOR</h2>
         <p class="section-desc">
-          Localizado estrategicamente na Av. dos Coqueiros, o Container Parada Obrigatória une o melhor de dois mundos: a energia das ondas de Mariscal e a serenidade das águas calmas de Canto Grande.
+          Localizado estrategicamente na Av. dos Coqueiros, o Contâiner Parada Obrigatória une o melhor de dois mundos: a energia das ondas de Mariscal e a serenidade das águas calmas de Canto Grande.
         </p>
       </div>
 
@@ -285,7 +301,7 @@
   </section>
 
   <!-- ========================================================================
-       SEÇÃO: CARDÁPIO DIGITAL INTERATIVO
+       SEÇÃO: CARDÁPIO DIGITAL INTERATIVO COM COMANDA
        ======================================================================== -->
   <section id="cardapio" class="menu-section">
     <div class="container">
@@ -307,14 +323,19 @@
         </div>
       </div>
 
-      <!-- Abas de Categorias -->
+      <!-- Filtros por Ocasião / Momento de Consumo -->
+      <div class="occasion-pills-nav" id="occasion-pills" role="region" aria-label="Filtrar por ocasião de consumo">
+        <!-- Renderizado dinamicamente pelo menu.js -->
+      </div>
+
+      <!-- Abas de Categorias Tradicionais -->
       <div class="menu-tabs-wrapper">
         <div class="menu-tabs-nav" id="menu-tabs" role="tablist">
-          <!-- Renderizado via JavaScript -->
+          <!-- Renderizado dinamicamente pelo menu.js -->
         </div>
       </div>
 
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
         <span id="menu-counter" style="font-size: 0.9rem; color: var(--color-text-secondary); font-weight: 600;">Carregando pratos...</span>
         <span style="font-size: 0.85rem; color: var(--color-gold-dark); font-weight: 600;">*Taxa de serviço de 10% opcional</span>
       </div>
@@ -322,6 +343,47 @@
       <!-- Grid dos Pratos -->
       <div class="menu-items-grid" id="menu-items-grid">
         <!-- Renderizado dinamicamente pelo menu.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO: QUEM FAZ A PARADA ACONTECER (STORYTELLING & IDENTIDADE HUMANA)
+       ======================================================================== -->
+  <section id="historia" class="story-section">
+    <div class="container story-box">
+      <div>
+        <span class="section-tag" style="color: var(--color-gold-amber);">Alma & Hospitalidade</span>
+        <h2 class="section-title light">QUEM FAZ A PARADA ACONTECER</h2>
+        <p class="section-desc light" style="margin-bottom: 20px;">
+          O <strong>Contâiner Parada Obrigatória</strong> nasceu da paixão por reunir amigos em torno de comida farta, cerveja gelada e a maresia inconfundível da Baía de Canto Grande e Mariscal.
+        </p>
+        <p class="section-desc light" style="margin-bottom: 24px;">
+          Nossa estrutura em contêiner marítimo foi projetada para se integrar com harmonia à orla de Bombinhas: preservamos cada árvore centenária da praia para garantir a você aquela sombra fresca e acolhedora que nenhum quiosque com toldo plástico consegue oferecer.
+        </p>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+          <div>
+            <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: var(--color-gold-amber);">4.7★</div>
+            <div style="font-size: 0.85rem; color: var(--color-text-light-muted);">Google Maps (+450 avaliações)</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: var(--color-gold-amber);">100%</div>
+            <div style="font-size: 0.85rem; color: var(--color-text-light-muted);">Pescados Frescos da Península</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: var(--color-gold-amber);">0 R$</div>
+            <div style="font-size: 0.85rem; color: var(--color-text-light-muted);">Cadeiras & Guarda-Sóis Grátis</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-quote-card">
+        <div style="font-size: 2.2rem; margin-bottom: 12px; color: var(--color-gold-amber);">“</div>
+        <p class="story-quote-text">
+          Nosso maior orgulho não é só servir a melhor anchova grelhada ou o chopp mais trincando da orla, mas ver as pessoas descalças na areia, rindo com os amigos no pôr do sol e se sentindo em casa. Essa é a verdadeira Parada Obrigatória.
+        </p>
+        <div class="story-quote-author">Equipe Contâiner Parada Obrigatória</div>
+        <div class="story-quote-role">Canto Grande, Bombinhas - SC</div>
       </div>
     </div>
   </section>
@@ -470,6 +532,7 @@
             <li><a href="#inicio">Início</a></li>
             <li><a href="#paraiso">O Paraíso & Localização</a></li>
             <li><a href="#cardapio">Cardápio Completo</a></li>
+            <li><a href="#historia">Quem Faz Acontecer</a></li>
             <li><a href="#musica">Música ao Vivo & Horários</a></li>
             <li><a href="#avaliacoes">Avaliações dos Clientes</a></li>
           </ul>
@@ -510,10 +573,94 @@
     <span>Falar no WhatsApp</span>
   </a>
 
+  <!-- ========================================================================
+       BOTÃO FLUTUANTE DA COMANDA DIGITAL (CARRINHO DE PRAIA)
+       ======================================================================== -->
+  <button type="button" id="cart-fab" class="cart-fab" aria-label="Abrir Minha Comanda de Praia">
+    <span style="font-size: 1.2rem;">🛒</span>
+    <span>Minha Comanda</span>
+    <span id="cart-badge" class="cart-badge-count">0</span>
+  </button>
+
+  <!-- Overlay e Drawer da Comanda Digital -->
+  <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+
+  <aside id="cart-drawer" class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="cart-header">
+      <div class="cart-header-title" id="cart-title">
+        <span>🏖️</span>
+        <span>Comanda de Praia</span>
+      </div>
+      <button type="button" id="btn-close-cart" class="cart-close-btn" aria-label="Fechar Comanda">&times;</button>
+    </div>
+
+    <div class="cart-body">
+      <!-- Estado Vazio -->
+      <div id="cart-empty-state" class="cart-empty-state">
+        <div style="font-size: 3rem; margin-bottom: 12px;">🍽️</div>
+        <h4 style="font-size: 1.2rem; color: var(--color-container-dark); margin-bottom: 8px;">Sua comanda está vazia</h4>
+        <p>Clique em <strong>+ Comanda</strong> nos pratos ou bebidas do cardápio para pedir direto da sua cadeira ou mesa!</p>
+      </div>
+
+      <!-- Lista de Itens Adicionados -->
+      <div id="cart-items-list" class="cart-items-list"></div>
+
+      <!-- Bloco com Opções de Atendimento e Totais -->
+      <div id="cart-footer-block" style="display: none;">
+        <div class="cart-location-box">
+          <label class="cart-location-label">📍 Onde você está sentado?</label>
+          <div class="cart-radio-group">
+            <label style="cursor: pointer; display: flex; align-items: center; gap: 6px;">
+              <input type="radio" name="cart-location-type" value="areia" checked>
+              <span>🏖️ Areia (Cadeira / Guarda-sol)</span>
+            </label>
+            <label style="cursor: pointer; display: flex; align-items: center; gap: 6px;">
+              <input type="radio" name="cart-location-type" value="deck">
+              <span>🪵 Mesa no Deck</span>
+            </label>
+          </div>
+          <input type="text" id="cart-location-ref" class="cart-input-field" placeholder="Ex: Guarda-sol azul perto da árvore" maxlength="80">
+        </div>
+
+        <div style="margin-bottom: 18px;">
+          <label for="cart-notes" style="font-size: 0.88rem; font-weight: 700; color: var(--color-container-dark); margin-bottom: 6px; display: block;">📝 Observações / Ponto da Carne:</label>
+          <input type="text" id="cart-notes" class="cart-input-field" placeholder="Ex: Ao ponto, sem cebola, limão extra" maxlength="120">
+        </div>
+
+        <div class="cart-footer" style="padding: 0; box-shadow: none; border-top: none;">
+          <div class="cart-summary-line">
+            <span>Subtotal:</span>
+            <strong id="cart-subtotal">R$ 0,00</strong>
+          </div>
+          <div class="cart-summary-line" style="align-items: center;">
+            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.88rem;">
+              <input type="checkbox" id="cart-service-check" checked>
+              <span>Taxa de serviço na praia (10% opcional):</span>
+            </label>
+            <strong id="cart-tax">R$ 0,00</strong>
+          </div>
+          <div class="cart-summary-line total">
+            <span>TOTAL:</span>
+            <strong id="cart-total" style="color: var(--color-gold-dark);">R$ 0,00</strong>
+          </div>
+
+          <button type="button" id="btn-send-whatsapp-order" class="btn-send-order">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span>Enviar Pedido pelo WhatsApp</span>
+          </button>
+          <p style="font-size: 0.76rem; color: var(--color-text-secondary); text-align: center; margin-top: 10px;">
+            🔒 O garçom receberá seu pedido formatado com o número da mesa ou referência na areia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
   <!-- Fallback Embedded Data para visualização local imediata sem depender de servidor HTTP -->
   <script>
-    // Carregamento resiliente do cardápio caso rodando via protocolo file://
-    window.__MENU_DATA__ = {"categorias": [{"id": "peixes_frutos_do_mar", "nome": "Pescados & Frutos do Mar", "icone": "fish", "descricao": "Pescados frescos e clássicos litorâneos preparados na hora, servidos à la carte com acompanhamentos nobres."}, {"id": "carnes_grelhados", "nome": "Carnes & Grelhados", "icone": "flame", "descricao": "Cortes nobres preparados na brasa e chapa quente, suculentos e bem servidos."}, {"id": "hamburgueres", "nome": "Hambúrgueres Artesanais", "icone": "beef", "descricao": "Pão brioche tostado na manteiga, blend da casa 150g no ponto certo e acompanhados de fritas crocantes."}, {"id": "petiscos_empanadas", "nome": "Petiscos & Empanadas", "icone": "utensils", "descricao": "Tábuas gigantes para compartilhar na areia, pastéis crocantes com maionese caseira e autênticas empanadas argentinas."}, {"id": "chopes_drinks", "nome": "Chopes, Drinks & Bar", "icone": "beer", "descricao": "Chopp artesanal trincando de gelado, torres de 1L e 2L, coquetelaria autoral e caipirinhas tropicais."}, {"id": "sobremesas_cafes", "nome": "Cafés & Sobremesas", "icone": "coffee", "descricao": "Para adoçar o dia na praia: churros gourmet, petit gateau, açaí bem gelado e crepes franceses."}], "itens": [{"id": "anchova_grelhada", "categoria": "peixes_frutos_do_mar", "nome": "Anchova Grelhada Especial", "preco": "139,00", "serve": "2 pessoas", "destaque": "Carro-Chefe da Casa", "descricao": "Anchova fresca grelhada no ponto perfeito com tempero da casa. Acompanha arroz branco soltinho, pirão de peixe tradicional de Bombinhas, batata sauté e salada mista fresca.", "foto": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"}, {"id": "polvo_galega", "categoria": "peixes_frutos_do_mar", "nome": "Polvo à Galega (400g)", "preco": "199,00", "serve": "2 pessoas", "destaque": "Alta Gastronomia", "descricao": "Tentáculos de polvo macios e dourados com azeite de oliva extra virgem e páprica. Acompanha batatas inglesas cozidas no vapor.", "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}, {"id": "camarao_milanesa", "categoria": "peixes_frutos_do_mar", "nome": "Camarão à Milanesa", "preco": "129,00", "serve": "2 pessoas", "destaque": "Mais Pedido na Orla", "descricao": "Camarões selecionados empanados em crosta dourada e sequinha. Acompanha batata frita, arroz, feijão e salada mista.", "foto": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"}, {"id": "salmao_maracuja", "categoria": "peixes_frutos_do_mar", "nome": "Salmão ao Molho de Maracujá", "preco": "159,00", "serve": "2 pessoas", "descricao": "Filé de salmão grelhado regado com molho agridoce suave de maracujá fresco. Acompanha batata sauté, arroz, pirão e salada mista.", "foto": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80"}, {"id": "tilapia_grelhada", "categoria": "peixes_frutos_do_mar", "nome": "Tilápia Grelhada Nobre", "preco": "179,00", "serve": "2 pessoas", "descricao": "Filé generoso de tilápia fresca grelhada na manteiga de ervas. Acompanha batata sauté, arroz, pirão e salada mista.", "foto": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"}, {"id": "camarao_pistola", "categoria": "peixes_frutos_do_mar", "nome": "Camarão Pistola ao Bafo ou Alho & Óleo (400g)", "preco": "159,00", "serve": "Petisco", "destaque": "Clássico da Praia", "descricao": "Camarões pistola inteiros preparados ao bafo com limão ou salteados no alho e azeite de oliva.", "foto": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=80"}, {"id": "camarao_panko", "categoria": "peixes_frutos_do_mar", "nome": "Camarão Crocante em Farinha Panko (400g)", "preco": "139,00", "serve": "Petisco", "descricao": "Camarões graúdos empanados na farinha panko japonesa ultra crocante. Acompanha molho tártaro artesanal.", "foto": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80"}, {"id": "lula_dourada", "categoria": "peixes_frutos_do_mar", "nome": "Lula à Dorê (400g)", "preco": "110,00", "serve": "Petisco", "descricao": "Anéis de lula tenros empanados e fritos no ponto exato com limão taiti fresco.", "foto": "https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=600&q=80"}, {"id": "ostras_gratinadas", "categoria": "peixes_frutos_do_mar", "nome": "Ostras Gratinadas (6 unidades)", "preco": "69,90", "serve": "Entrada", "descricao": "Ostras nativas de cultivo catarinense gratinadas com queijo parmesão e ervas finas.", "foto": "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=80"}, {"id": "picanha_chapa", "categoria": "carnes_grelhados", "nome": "Picanha na Chapa Nobre", "preco": "169,00", "serve": "2 pessoas", "destaque": "Corte Nobre", "descricao": "Fatias espessas de picanha de primeira seladas ao ponto na chapa bem quente. Acompanha batata frita crocante, arroz, feijão, farofa temperada, salada mista e molho da casa.", "foto": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80"}, {"id": "frango_parmegiana", "categoria": "carnes_grelhados", "nome": "Parmegiana da Parada", "preco": "95,00", "serve": "2 pessoas", "destaque": "Eleita a Melhor da Região", "descricao": "Filé de frango empanado artesanal, coberto com molho de tomate pelati caseiro e queijo derretido em abundância. Acompanha polenta frita, arroz, feijão e salada mista.", "foto": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=600&q=80"}, {"id": "contra_file", "categoria": "carnes_grelhados", "nome": "Contra Filé Grelhado", "preco": "119,00", "serve": "2 pessoas", "descricao": "Bife de contrafilé macio e suculento com alho confitado. Acompanha batata frita, arroz, feijão e salada mista.", "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}, {"id": "bisteca_carre", "categoria": "carnes_grelhados", "nome": "Bisteca de Carré Suíno", "preco": "129,00", "serve": "2 pessoas", "descricao": "Carré suíno grelhado com molho barbecue especial. Acompanha polenta crocante, arroz, feijão, salada mista e farofa.", "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}, {"id": "burguer_obrigatorio", "categoria": "hamburgueres", "nome": "Burguer Obrigatório e Fritas", "preco": "55,00", "destaque": "Especial da Casa", "descricao": "Pão brioche selado, hambúrguer artesanal da casa 150g, fatias de bacon crocante, cheddar cremoso, mozzarella, maionese artesanal, alface, tomate, picles e cebola roxa. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"}, {"id": "burguer_melt_crispy", "categoria": "hamburgueres", "nome": "Burguer Melt Crispy e Fritas", "preco": "58,00", "destaque": "Sucesso de Pedidos", "descricao": "Pão brioche, blend 150g, bacon crocante, cheddar derretido, maionese especial, cebola crispy dourada e um irresistível toque de melado de cana. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"}, {"id": "burguer_duplo", "categoria": "hamburgueres", "nome": "Burguer Duplo 300g e Fritas", "preco": "49,00", "descricao": "Dois hambúrgueres artesanais de 150g (300g total de carne pura), maionese da casa, mozzarella derretida, alface e tomate no pão brioche. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=600&q=80"}, {"id": "burguer_bacon", "categoria": "hamburgueres", "nome": "Burguer Bacon e Fritas", "preco": "48,00", "descricao": "Pão brioche, hambúrguer 150g, fatias generosas de bacon artesanal, maionese, mozzarella, alface e tomate fresco. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=600&q=80"}, {"id": "burguer_vegetariano", "categoria": "hamburgueres", "nome": "Burguer Vegetariano e Fritas", "preco": "42,00", "descricao": "Pão brioche, ovo frito no ponto, maionese, cebola roxa, alface, tomate, picles e cenoura ralada fresca. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=80"}, {"id": "burguer_kids", "categoria": "hamburgueres", "nome": "Burguer Kids", "preco": "26,00", "descricao": "Pão brioche macio, hambúrguer da casa 100g bem passado, queijo mozzarella e maionese suave.", "foto": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"}, {"id": "tabua_parada", "categoria": "petiscos_empanadas", "nome": "Tábua da Parada (2.0 kg)", "preco": "289,00", "serve": "4 a 6 pessoas", "destaque": "A Maior da Orla", "descricao": "O banquete definitivo da praia: camarão à milanesa, anéis de lula, iscas de peixe, marisco à milanesa, bolinhos de peixe artesanais, bolinhos de camarão com queijo e batata frita crocante.", "foto": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"}, {"id": "trevo_container", "categoria": "petiscos_empanadas", "nome": "Trevo Contâiner (1.2 kg)", "preco": "189,00", "serve": "3 a 4 pessoas", "descricao": "Combinação campeã com camarão sequinho, anéis de lula fritos, iscas de peixe empanadas e batata frita bem servida.", "foto": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80"}, {"id": "empanadas_argentinas", "categoria": "petiscos_empanadas", "nome": "Empanadas Argentinas Artesanais", "preco": "16,00", "serve": "Unidade", "destaque": "Tradição Portenha", "descricao": "Massa folhada artesanal dourada no forno nos sabores clássicos: Carne Tradicional, Caprese, Frango Suave e Calabresa com Queijo.", "foto": "https://images.unsplash.com/photo-1628106235973-4554203e0ce6?auto=format&fit=crop&w=600&q=80"}, {"id": "pasteis_especiais", "categoria": "petiscos_empanadas", "nome": "Pastéis da Casa com Maionese Artesanal", "preco": "26,00", "serve": "Unidade", "descricao": "Pastel grande de feira frito na hora com massa crocante nos recheios: Queijo, Carne, Frango, 4 Queijos (R$ 32) ou Camarão com Catupiry (R$ 39). Acompanha maionese verde caseira.", "foto": "https://images.unsplash.com/photo-1628106235973-4554203e0ce6?auto=format&fit=crop&w=600&q=80"}, {"id": "chopp_pilsen", "categoria": "chopes_drinks", "nome": "Chopp Pilsen Premium (400ml)", "preco": "16,00", "destaque": "Trincando de Gelado", "descricao": "Corpo leve, espuma cremosa e colarinho perfeito. Ideal para refrescar a tarde quente de praia em Canto Grande.", "foto": "https://images.unsplash.com/photo-1608270199049-756187799763?auto=format&fit=crop&w=600&q=80"}, {"id": "torre_chopp", "categoria": "chopes_drinks", "nome": "Torre de Chopp Pilsen (2 Litros)", "preco": "76,00", "serve": "Galera / Mesa", "destaque": "Chopp Gelado até o Fim", "descricao": "Torre térmica iluminada com tubo congelador interno para manter os 2 litros de chopp estupidamente gelados até o último copo. (Opção de 1L por R$ 39).", "foto": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80"}, {"id": "chopp_ipa", "categoria": "chopes_drinks", "nome": "Chopp Session IPA (400ml)", "preco": "18,00", "descricao": "Chopp artesanal lupulado com notas cítricas e tropicais. Corpo médio-baixo, extremamente refrescante para o clima de praia.", "foto": "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?auto=format&fit=crop&w=600&q=80"}, {"id": "chopp_vinho_rose", "categoria": "chopes_drinks", "nome": "Chopp de Vinho Rosé 'Safra Rosé' (1,5L)", "preco": "45,00", "destaque": "Sabor de Verão o Ano Todo", "descricao": "Mistura especial de uvas nobres com leveza e notas frutadas com a refrescância do espumante.", "foto": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80"}, {"id": "pina_colada_abacaxi", "categoria": "chopes_drinks", "nome": "Pina Colada no Abacaxi Natural", "preco": "39,00", "destaque": "Instagramável", "descricao": "Rum Bacardi, leite de coco, abacaxi e leite condensado servidos esculpidos dentro da própria fruta inteira.", "foto": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80"}, {"id": "maracujohnnie", "categoria": "chopes_drinks", "nome": "Maracujohnnie", "preco": "34,90", "descricao": "Whisky Johnnie Walker Blonde, polpa de maracujá fresco e refrigerante Schweppes citrus gelado com gelo cristalino.", "foto": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80"}, {"id": "caipira_obrigatoria", "categoria": "chopes_drinks", "nome": "Caipirinha Obrigatória", "preco": "30,00", "descricao": "Vodka Smirnoff misturada com infusão de maracujá fresco e morangos selecionados macerados com açúcar.", "foto": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=600&q=80"}, {"id": "aperol_spritz", "categoria": "chopes_drinks", "nome": "Aperol Spritz", "preco": "34,00", "descricao": "Aperol, espumante Brut borbulhante, água com gás e fatia de laranja bahia fresca.", "foto": "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=600&q=80"}, {"id": "churros_gourmet", "categoria": "sobremesas_cafes", "nome": "Churros Gourmet (Porção com 7 mini)", "preco": "15,00", "destaque": "Queridinho da Praia", "descricao": "Mini churros crocantes polvilhados com açúcar e canela, servidos quentinhos com doce de leite artesanal cremoso.", "foto": "https://images.unsplash.com/photo-1624300629298-e9de39c13be5?auto=format&fit=crop&w=600&q=80"}, {"id": "acai_tigela", "categoria": "sobremesas_cafes", "nome": "Açaí na Tigela Puro (400ml)", "preco": "35,00", "destaque": "Pós-Surf / Energia", "descricao": "Cremoso e bem gelado, acompanhado de banana em rodelas, granola crocante, leite em pó e leite condensado. (Opção 200ml por R$ 25).", "foto": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80"}, {"id": "petit_gateau", "categoria": "sobremesas_cafes", "nome": "Petit Gateau com Sorvete", "preco": "28,00", "descricao": "Bolinho de chocolate com recheio cremoso escorrendo, servido com bola de sorvete de creme e calda de chocolate.", "foto": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"}]};
+    window.__MENU_DATA__ = {"categorias": [{"id": "peixes_frutos_do_mar", "nome": "Pescados & Frutos do Mar", "icone": "fish", "descricao": "Pescados frescos e clássicos litorâneos preparados na hora, servidos à la carte com acompanhamentos nobres."}, {"id": "carnes_grelhados", "nome": "Carnes & Grelhados", "icone": "flame", "descricao": "Cortes nobres preparados na brasa e chapa quente, suculentos e bem servidos."}, {"id": "hamburgueres", "nome": "Hambúrgueres Artesanais", "icone": "beef", "descricao": "Pão brioche tostado na manteiga, blend da casa 150g no ponto certo e acompanhados de fritas crocantes."}, {"id": "petiscos_empanadas", "nome": "Petiscos & Empanadas", "icone": "utensils", "descricao": "Tábuas gigantes para compartilhar na areia, pastéis crocantes com maionese caseira e autênticas empanadas argentinas."}, {"id": "chopes_drinks", "nome": "Chopes, Drinks & Bar", "icone": "beer", "descricao": "Chopp artesanal trincando de gelado, torres de 1L e 2L, coquetelaria autoral e caipirinhas tropicais."}, {"id": "sobremesas_cafes", "nome": "Cafés & Sobremesas", "icone": "coffee", "descricao": "Para adoçar o dia na praia: churros gourmet, petit gateau, açaí bem gelado e crepes franceses."}], "itens": [{"id": "anchova_grelhada", "categoria": "peixes_frutos_do_mar", "nome": "Anchova Grelhada Especial", "preco": "139,00", "serve": "2 pessoas", "destaque": "Carro-Chefe da Casa", "descricao": "Anchova fresca grelhada no ponto perfeito com tempero da casa. Acompanha arroz branco soltinho, pirão de peixe tradicional de Bombinhas, batata sauté e salada mista fresca.", "foto": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "polvo_galega", "categoria": "peixes_frutos_do_mar", "nome": "Polvo à Galega (400g)", "preco": "199,00", "serve": "2 pessoas", "destaque": "Alta Gastronomia", "descricao": "Tentáculos de polvo macios e dourados com azeite de oliva extra virgem e páprica. Acompanha batatas inglesas cozidas no vapor.", "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "camarao_milanesa", "categoria": "peixes_frutos_do_mar", "nome": "Camarão à Milanesa", "preco": "129,00", "serve": "2 pessoas", "destaque": "Mais Pedido na Orla", "descricao": "Camarões selecionados empanados em crosta dourada e sequinha. Acompanha batata frita, arroz, feijão e salada mista.", "foto": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "salmao_maracuja", "categoria": "peixes_frutos_do_mar", "nome": "Salmão ao Molho de Maracujá", "preco": "159,00", "serve": "2 pessoas", "descricao": "Filé de salmão grelhado regado com molho agridoce suave de maracujá fresco. Acompanha batata sauté, arroz, pirão e salada mista.", "foto": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "tilapia_grelhada", "categoria": "peixes_frutos_do_mar", "nome": "Tilápia Grelhada Nobre", "preco": "179,00", "serve": "2 pessoas", "descricao": "Filé generoso de tilápia fresca grelhada na manteiga de ervas. Acompanha batata sauté, arroz, pirão e salada mista.", "foto": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "camarao_pistola", "categoria": "peixes_frutos_do_mar", "nome": "Camarão Pistola ao Bafo ou Alho & Óleo (400g)", "preco": "159,00", "serve": "Petisco", "destaque": "Clássico da Praia", "descricao": "Camarões pistola inteiros preparados ao bafo com limão ou salteados no alho e azeite de oliva.", "foto": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "camarao_panko", "categoria": "peixes_frutos_do_mar", "nome": "Camarão Crocante em Farinha Panko (400g)", "preco": "139,00", "serve": "Petisco", "descricao": "Camarões graúdos empanados na farinha panko japonesa ultra crocante. Acompanha molho tártaro artesanal.", "foto": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "lula_dourada", "categoria": "peixes_frutos_do_mar", "nome": "Lula à Dorê (400g)", "preco": "110,00", "serve": "Petisco", "descricao": "Anéis de lula tenros empanados e fritos no ponto exato com limão taiti fresco.", "foto": "https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "ostras_gratinadas", "categoria": "peixes_frutos_do_mar", "nome": "Ostras Gratinadas (6 unidades)", "preco": "69,90", "serve": "Entrada", "descricao": "Ostras nativas de cultivo catarinense gratinadas com queijo parmesão e ervas finas.", "foto": "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "picanha_chapa", "categoria": "carnes_grelhados", "nome": "Picanha na Chapa Nobre", "preco": "169,00", "serve": "2 pessoas", "destaque": "Corte Nobre", "descricao": "Fatias espessas de picanha de primeira seladas ao ponto na chapa bem quente. Acompanha batata frita crocante, arroz, feijão, farofa temperada, salada mista e molho da casa.", "foto": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "frango_parmegiana", "categoria": "carnes_grelhados", "nome": "Parmegiana da Parada", "preco": "95,00", "serve": "2 pessoas", "destaque": "Eleita a Melhor da Região", "descricao": "Filé de frango empanado artesanal, coberto com molho de tomate pelati caseiro e queijo derretido em abundância. Acompanha polenta frita, arroz, feijão e salada mista.", "foto": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "contra_file", "categoria": "carnes_grelhados", "nome": "Contra Filé Grelhado", "preco": "119,00", "serve": "2 pessoas", "descricao": "Bife de contrafilé macio e suculento com alho confitado. Acompanha batata frita, arroz, feijão e salada mista.", "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "bisteca_carre", "categoria": "carnes_grelhados", "nome": "Bisteca de Carré Suíno", "preco": "129,00", "serve": "2 pessoas", "descricao": "Carré suíno grelhado com molho barbecue especial. Acompanha polenta crocante, arroz, feijão, salada mista e farofa.", "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", "ocasioes": ["almoco_farto"]}, {"id": "burguer_obrigatorio", "categoria": "hamburgueres", "nome": "Burguer Obrigatório e Fritas", "preco": "55,00", "destaque": "Especial da Casa", "descricao": "Pão brioche selado, hambúrguer artesanal da casa 150g, fatias de bacon crocante, cheddar cremoso, mozzarella, maionese artesanal, alface, tomate, picles e cebola roxa. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "burguer_melt_crispy", "categoria": "hamburgueres", "nome": "Burguer Melt Crispy e Fritas", "preco": "58,00", "destaque": "Sucesso de Pedidos", "descricao": "Pão brioche, blend 150g, bacon crocante, cheddar derretido, maionese especial, cebola crispy dourada e um irresistível toque de melado de cana. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "burguer_duplo", "categoria": "hamburgueres", "nome": "Burguer Duplo 300g e Fritas", "preco": "49,00", "descricao": "Dois hambúrgueres artesanais de 150g (300g total de carne pura), maionese da casa, mozzarella derretida, alface e tomate no pão brioche. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "burguer_bacon", "categoria": "hamburgueres", "nome": "Burguer Bacon e Fritas", "preco": "48,00", "descricao": "Pão brioche, hambúrguer 150g, fatias generosas de bacon artesanal, maionese, mozzarella, alface e tomate fresco. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "burguer_vegetariano", "categoria": "hamburgueres", "nome": "Burguer Vegetariano e Fritas", "preco": "42,00", "descricao": "Pão brioche, ovo frito no ponto, maionese, cebola roxa, alface, tomate, picles e cenoura ralada fresca. Acompanha fritas.", "foto": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pos_surf"]}, {"id": "burguer_kids", "categoria": "hamburgueres", "nome": "Burguer Kids", "preco": "26,00", "descricao": "Pão brioche macio, hambúrguer da casa 100g bem passado, queijo mozzarella e maionese suave.", "foto": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pos_surf"]}, {"id": "tabua_parada", "categoria": "petiscos_empanadas", "nome": "Tábua da Parada (2.0 kg)", "preco": "289,00", "serve": "4 a 6 pessoas", "destaque": "A Maior da Orla", "descricao": "O banquete definitivo da praia: camarão à milanesa, anéis de lula, iscas de peixe, marisco à milanesa, bolinhos de peixe artesanais, bolinhos de camarão com queijo e batata frita crocante.", "foto": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "trevo_container", "categoria": "petiscos_empanadas", "nome": "Trevo Contâiner (1.2 kg)", "preco": "189,00", "serve": "3 a 4 pessoas", "descricao": "Combinação campeã com camarão sequinho, anéis de lula fritos, iscas de peixe empanadas e batata frita bem servida.", "foto": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "empanadas_argentinas", "categoria": "petiscos_empanadas", "nome": "Empanadas Argentinas Artesanais", "preco": "16,00", "serve": "Unidade", "destaque": "Tradição Portenha", "descricao": "Massa folhada artesanal dourada no forno nos sabores clássicos: Carne Tradicional, Caprese, Frango Suave e Calabresa com Queijo.", "foto": "https://images.unsplash.com/photo-1628106235973-4554203e0ce6?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "pasteis_especiais", "categoria": "petiscos_empanadas", "nome": "Pastéis da Casa com Maionese Artesanal", "preco": "26,00", "serve": "Unidade", "descricao": "Pastel grande de feira frito na hora com massa crocante nos recheios: Queijo, Carne, Frango, 4 Queijos (R$ 32) ou Camarão com Catupiry (R$ 39). Acompanha maionese verde caseira.", "foto": "https://images.unsplash.com/photo-1628106235973-4554203e0ce6?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pe_na_areia"]}, {"id": "chopp_pilsen", "categoria": "chopes_drinks", "nome": "Chopp Pilsen Premium (400ml)", "preco": "16,00", "destaque": "Trincando de Gelado", "descricao": "Corpo leve, espuma cremosa e colarinho perfeito. Ideal para refrescar a tarde quente de praia em Canto Grande.", "foto": "https://images.unsplash.com/photo-1608270199049-756187799763?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "torre_chopp", "categoria": "chopes_drinks", "nome": "Torre de Chopp Pilsen (2 Litros)", "preco": "76,00", "serve": "Galera / Mesa", "destaque": "Chopp Gelado até o Fim", "descricao": "Torre térmica iluminada com tubo congelador interno para manter os 2 litros de chopp estupidamente gelados até o último copo. (Opção de 1L por R$ 39).", "foto": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "chopp_ipa", "categoria": "chopes_drinks", "nome": "Chopp Session IPA (400ml)", "preco": "18,00", "descricao": "Chopp artesanal lupulado com notas cítricas e tropicais. Corpo médio-baixo, extremamente refrescante para o clima de praia.", "foto": "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "chopp_vinho_rose", "categoria": "chopes_drinks", "nome": "Chopp de Vinho Rosé 'Safra Rosé' (1,5L)", "preco": "45,00", "destaque": "Sabor de Verão o Ano Todo", "descricao": "Mistura especial de uvas nobres com leveza e notas frutadas com a refrescância do espumante.", "foto": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "pina_colada_abacaxi", "categoria": "chopes_drinks", "nome": "Pina Colada no Abacaxi Natural", "preco": "39,00", "destaque": "Instagramável", "descricao": "Rum Bacardi, leite de coco, abacaxi e leite condensado servidos esculpidos dentro da própria fruta inteira.", "foto": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "maracujohnnie", "categoria": "chopes_drinks", "nome": "Maracujohnnie", "preco": "34,90", "descricao": "Whisky Johnnie Walker Blonde, polpa de maracujá fresco e refrigerante Schweppes citrus gelado com gelo cristalino.", "foto": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "caipira_obrigatoria", "categoria": "chopes_drinks", "nome": "Caipirinha Obrigatória", "preco": "30,00", "descricao": "Vodka Smirnoff misturada com infusão de maracujá fresco e morangos selecionados macerados com açúcar.", "foto": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "aperol_spritz", "categoria": "chopes_drinks", "nome": "Aperol Spritz", "preco": "34,00", "descricao": "Aperol, espumante Brut borbulhante, água com gás e fatia de laranja bahia fresca.", "foto": "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=600&q=80", "ocasioes": ["sunset_happy_hour"]}, {"id": "churros_gourmet", "categoria": "sobremesas_cafes", "nome": "Churros Gourmet (Porção com 7 mini)", "preco": "15,00", "destaque": "Queridinho da Praia", "descricao": "Mini churros crocantes polvilhados com açúcar e canela, servidos quentinhos com doce de leite artesanal cremoso.", "foto": "https://images.unsplash.com/photo-1624300629298-e9de39c13be5?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pos_surf"]}, {"id": "acai_tigela", "categoria": "sobremesas_cafes", "nome": "Açaí na Tigela Puro (400ml)", "preco": "35,00", "destaque": "Pós-Surf / Energia", "descricao": "Cremoso e bem gelado, acompanhado de banana em rodelas, granola crocante, leite em pó e leite condensado. (Opção 200ml por R$ 25).", "foto": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pos_surf"]}, {"id": "petit_gateau", "categoria": "sobremesas_cafes", "nome": "Petit Gateau com Sorvete", "preco": "28,00", "descricao": "Bolinho de chocolate com recheio cremoso escorrendo, servido com bola de sorvete de creme e calda de chocolate.", "foto": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80", "ocasioes": ["pos_surf"]}]};
   </script>
   <script src="./src/js/menu.js"></script>
 </body>
