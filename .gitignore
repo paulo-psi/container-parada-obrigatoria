@@ -1,0 +1,21 @@
+# Backups locais e repositórios auxiliares pesados
+_backup/
+_skills_repo/
+_skills_hub/
+
+# Dependências e ambientes
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+mcp_config.json
+
+# Artefatos temporários de teste e sistema
+.playwright-mcp/
+.DS_Store
+Thumbs.db
