@@ -1,6 +1,6 @@
 /**
- * Container Parada Obrigatória — Módulo do Cardápio Interativo
- * Renderização dinâmica, filtros por abas, busca instantânea e geração de pedidos WhatsApp.
+ * Container Parada Obrigatória — Módulo do Cardápio Interativo (V2 Design Studio)
+ * Imagens gastronômicas apetitosas, filtros por abas, busca instantânea e geração de pedidos WhatsApp.
  */
 
 const WHATSAPP_NUMBER = "5547984055872";
@@ -91,7 +91,7 @@ class MenuManager {
     const items = this.getFilteredItems();
 
     if (this.counterEl) {
-      this.counterEl.textContent = `${items.length} ${items.length === 1 ? 'item disponível' : 'itens disponíveis'}`;
+      this.counterEl.textContent = `${items.length} ${items.length === 1 ? 'item selecionado' : 'itens selecionados'}`;
     }
 
     if (items.length === 0) {
@@ -113,39 +113,45 @@ class MenuManager {
     }
 
     this.itemsGrid.innerHTML = items.map(item => {
-      const serveBadge = item.serve ? `<span class="badge badge-serve">👥 ${item.serve}</span>` : '';
-      const highlightBadge = item.destaque ? `<span class="badge badge-destaque">⭐ ${item.destaque}</span>` : '';
+      const serveBadge = item.serve ? `<span class="card-badge badge-serve">👥 ${item.serve}</span>` : '';
+      const highlightBadge = item.destaque ? `<span class="card-badge badge-destaque">⭐ ${item.destaque}</span>` : '';
       
       const whatsappMsg = encodeURIComponent(
-        `Olá! Estou vendo o cardápio do Container Parada Obrigatória e gostaria de pedir / saber mais sobre:\n\n👉 *${item.nome}* (R$ ${item.preco})\n\nComo está o atendimento pé na areia / mesas no momento?`
+        `Olá! Estou no site do Container Parada Obrigatória e gostaria de pedir:\n\n👉 *${item.nome}* (R$ ${item.preco})\n\nPor favor, como está o atendimento pé na areia / mesas no momento?`
       );
       const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMsg}`;
 
+      const photoUrl = item.foto || 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80';
+
       return `
         <article class="menu-card" data-item-id="${item.id}">
-          <div class="menu-card-header">
-            <div class="menu-card-badges">
+          <div class="menu-card-image-wrap">
+            <img src="${photoUrl}" alt="${item.nome}" loading="lazy" class="menu-card-img" onerror="this.src='https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80'">
+            <div class="menu-card-overlay"></div>
+            <div class="menu-card-badges-float">
               ${highlightBadge}
               ${serveBadge}
             </div>
-            <div class="menu-card-price">
-              <span class="currency">R$</span>
-              <span class="value">${item.preco}</span>
-            </div>
-          </div>
-          
-          <div class="menu-card-body">
-            <h3 class="menu-card-title">${item.nome}</h3>
-            <p class="menu-card-desc">${item.descricao}</p>
           </div>
 
-          <div class="menu-card-footer">
-            <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-card-whatsapp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-              </svg>
-              <span>Pedir no WhatsApp</span>
-            </a>
+          <div class="menu-card-content">
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">${item.nome}</h3>
+              <p class="menu-card-desc">${item.descricao}</p>
+            </div>
+
+            <div class="menu-card-footer">
+              <div class="menu-card-price-block">
+                <span class="currency">R$</span>
+                <span class="value">${item.preco}</span>
+              </div>
+              <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="btn-card-order" aria-label="Pedir ${item.nome} no WhatsApp">
+                <span>Pedir no WhatsApp</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </article>
       `;

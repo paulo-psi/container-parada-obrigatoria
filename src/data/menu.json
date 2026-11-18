@@ -46,7 +46,7 @@
       "serve": "2 pessoas",
       "destaque": "Carro-Chefe da Casa",
       "descricao": "Anchova fresca grelhada no ponto perfeito com tempero da casa. Acompanha arroz branco soltinho, pirão de peixe tradicional de Bombinhas, batata sauté e salada mista fresca.",
-      "foto": "anchova.webp"
+      "foto": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "polvo_galega",
@@ -56,7 +56,7 @@
       "serve": "2 pessoas",
       "destaque": "Alta Gastronomia",
       "descricao": "Tentáculos de polvo macios e dourados com azeite de oliva extra virgem e páprica. Acompanha batatas inglesas cozidas no vapor.",
-      "foto": "polvo.webp"
+      "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "camarao_milanesa",
@@ -66,7 +66,7 @@
       "serve": "2 pessoas",
       "destaque": "Mais Pedido na Orla",
       "descricao": "Camarões selecionados empanados em crosta dourada e sequinha. Acompanha batata frita, arroz, feijão e salada mista.",
-      "foto": "camarao.webp"
+      "foto": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "salmao_maracuja",
@@ -75,7 +75,7 @@
       "preco": "159,00",
       "serve": "2 pessoas",
       "descricao": "Filé de salmão grelhado regado com molho agridoce suave de maracujá fresco. Acompanha batata sauté, arroz, pirão e salada mista.",
-      "foto": "salmao.webp"
+      "foto": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "tilapia_grelhada",
@@ -84,7 +84,7 @@
       "preco": "179,00",
       "serve": "2 pessoas",
       "descricao": "Filé generoso de tilápia fresca grelhada na manteiga de ervas. Acompanha batata sauté, arroz, pirão e salada mista.",
-      "foto": "tilapia.webp"
+      "foto": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "camarao_pistola",
@@ -94,7 +94,7 @@
       "serve": "Petisco",
       "destaque": "Clássico da Praia",
       "descricao": "Camarões pistola inteiros preparados ao bafo com limão ou salteados no alho e azeite de oliva.",
-      "foto": "pistola.webp"
+      "foto": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "camarao_panko",
@@ -103,7 +103,7 @@
       "preco": "139,00",
       "serve": "Petisco",
       "descricao": "Camarões graúdos empanados na farinha panko japonesa ultra crocante. Acompanha molho tártaro artesanal.",
-      "foto": "panko.webp"
+      "foto": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "lula_dourada",
@@ -112,7 +112,7 @@
       "preco": "110,00",
       "serve": "Petisco",
       "descricao": "Anéis de lula tenros empanados e fritos no ponto exato com limão taiti fresco.",
-      "foto": "lula.webp"
+      "foto": "https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "ostras_gratinadas",
@@ -121,7 +121,7 @@
       "preco": "69,90",
       "serve": "Entrada",
       "descricao": "Ostras nativas de cultivo catarinense gratinadas com queijo parmesão e ervas finas.",
-      "foto": "ostras.webp"
+      "foto": "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "picanha_chapa",
@@ -131,7 +131,7 @@
       "serve": "2 pessoas",
       "destaque": "Corte Nobre",
       "descricao": "Fatias espessas de picanha de primeira seladas ao ponto na chapa bem quente. Acompanha batata frita crocante, arroz, feijão, farofa temperada, salada mista e molho da casa.",
-      "foto": "picanha.webp"
+      "foto": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "frango_parmegiana",
@@ -141,7 +141,7 @@
       "serve": "2 pessoas",
       "destaque": "Eleita a Melhor da Região",
       "descricao": "Filé de frango empanado artesanal, coberto com molho de tomate pelati caseiro e queijo derretido em abundância. Acompanha polenta frita, arroz, feijão e salada mista.",
-      "foto": "parmegiana.webp"
+      "foto": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "contra_file",
@@ -150,7 +150,7 @@
       "preco": "119,00",
       "serve": "2 pessoas",
       "descricao": "Bife de contrafilé macio e suculento com alho confitado. Acompanha batata frita, arroz, feijão e salada mista.",
-      "foto": "contrafile.webp"
+      "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "bisteca_carre",
@@ -159,7 +159,7 @@
       "preco": "129,00",
       "serve": "2 pessoas",
       "descricao": "Carré suíno grelhado com molho barbecue especial. Acompanha polenta crocante, arroz, feijão, salada mista e farofa.",
-      "foto": "carre.webp"
+      "foto": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "burguer_obrigatorio",
@@ -168,7 +168,7 @@
       "preco": "55,00",
       "destaque": "Especial da Casa",
       "descricao": "Pão brioche selado, hambúrguer artesanal da casa 150g, fatias de bacon crocante, cheddar cremoso, mozzarella, maionese artesanal, alface, tomate, picles e cebola roxa. Acompanha fritas.",
-      "foto": "burguer_obrigatorio.webp"
+      "foto": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "burguer_melt_crispy",
@@ -177,7 +177,7 @@
       "preco": "58,00",
       "destaque": "Sucesso de Pedidos",
       "descricao": "Pão brioche, blend 150g, bacon crocante, cheddar derretido, maionese especial, cebola crispy dourada e um irresistível toque de melado de cana. Acompanha fritas.",
-      "foto": "burguer_melt.webp"
+      "foto": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "burguer_duplo",
@@ -185,7 +185,7 @@
       "nome": "Burguer Duplo 300g e Fritas",
       "preco": "49,00",
       "descricao": "Dois hambúrgueres artesanais de 150g (300g total de carne pura), maionese da casa, mozzarella derretida, alface e tomate no pão brioche. Acompanha fritas.",
-      "foto": "burguer_duplo.webp"
+      "foto": "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "burguer_bacon",
@@ -193,7 +193,7 @@
       "nome": "Burguer Bacon e Fritas",
       "preco": "48,00",
       "descricao": "Pão brioche, hambúrguer 150g, fatias generosas de bacon artesanal, maionese, mozzarella, alface e tomate fresco. Acompanha fritas.",
-      "foto": "burguer_bacon.webp"
+      "foto": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "burguer_vegetariano",
@@ -201,7 +201,7 @@
       "nome": "Burguer Vegetariano e Fritas",
       "preco": "42,00",
       "descricao": "Pão brioche, ovo frito no ponto, maionese, cebola roxa, alface, tomate, picles e cenoura ralada fresca. Acompanha fritas.",
-      "foto": "burguer_veg.webp"
+      "foto": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "burguer_kids",
@@ -209,7 +209,7 @@
       "nome": "Burguer Kids",
       "preco": "26,00",
       "descricao": "Pão brioche macio, hambúrguer da casa 100g bem passado, queijo mozzarella e maionese suave.",
-      "foto": "burguer_kids.webp"
+      "foto": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "tabua_parada",
@@ -219,7 +219,7 @@
       "serve": "4 a 6 pessoas",
       "destaque": "A Maior da Orla",
       "descricao": "O banquete definitivo da praia: camarão à milanesa, anéis de lula, iscas de peixe, marisco à milanesa, bolinhos de peixe artesanais, bolinhos de camarão com queijo e batata frita crocante.",
-      "foto": "tabua_parada.webp"
+      "foto": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "trevo_container",
@@ -228,7 +228,7 @@
       "preco": "189,00",
       "serve": "3 a 4 pessoas",
       "descricao": "Combinação campeã com camarão sequinho, anéis de lula fritos, iscas de peixe empanadas e batata frita bem servida.",
-      "foto": "trevo.webp"
+      "foto": "https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "empanadas_argentinas",
@@ -238,7 +238,7 @@
       "serve": "Unidade",
       "destaque": "Tradição Portenha",
       "descricao": "Massa folhada artesanal dourada no forno nos sabores clássicos: Carne Tradicional, Caprese, Frango Suave e Calabresa com Queijo.",
-      "foto": "empanadas.webp"
+      "foto": "https://images.unsplash.com/photo-1628106235973-4554203e0ce6?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "pasteis_especiais",
@@ -247,7 +247,7 @@
       "preco": "26,00",
       "serve": "Unidade",
       "descricao": "Pastel grande de feira frito na hora com massa crocante nos recheios: Queijo, Carne, Frango, 4 Queijos (R$ 32) ou Camarão com Catupiry (R$ 39). Acompanha maionese verde caseira.",
-      "foto": "pastel.webp"
+      "foto": "https://images.unsplash.com/photo-1628106235973-4554203e0ce6?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "chopp_pilsen",
@@ -256,7 +256,7 @@
       "preco": "16,00",
       "destaque": "Trincando de Gelado",
       "descricao": "Corpo leve, espuma cremosa e colarinho perfeito. Ideal para refrescar a tarde quente de praia em Canto Grande.",
-      "foto": "chopp_pilsen.webp"
+      "foto": "https://images.unsplash.com/photo-1608270199049-756187799763?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "torre_chopp",
@@ -266,7 +266,7 @@
       "serve": "Galera / Mesa",
       "destaque": "Chopp Gelado até o Fim",
       "descricao": "Torre térmica iluminada com tubo congelador interno para manter os 2 litros de chopp estupidamente gelados até o último copo. (Opção de 1L por R$ 39).",
-      "foto": "torre_chopp.webp"
+      "foto": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "chopp_ipa",
@@ -274,7 +274,7 @@
       "nome": "Chopp Session IPA (400ml)",
       "preco": "18,00",
       "descricao": "Chopp artesanal lupulado com notas cítricas e tropicais. Corpo médio-baixo, extremamente refrescante para o clima de praia.",
-      "foto": "chopp_ipa.webp"
+      "foto": "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "chopp_vinho_rose",
@@ -283,7 +283,7 @@
       "preco": "45,00",
       "destaque": "Sabor de Verão o Ano Todo",
       "descricao": "Mistura especial de uvas nobres com leveza e notas frutadas com a refrescância do espumante.",
-      "foto": "chopp_rose.webp"
+      "foto": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "pina_colada_abacaxi",
@@ -292,7 +292,7 @@
       "preco": "39,00",
       "destaque": "Instagramável",
       "descricao": "Rum Bacardi, leite de coco, abacaxi e leite condensado servidos esculpidos dentro da própria fruta inteira.",
-      "foto": "pina_colada.webp"
+      "foto": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "maracujohnnie",
@@ -300,7 +300,7 @@
       "nome": "Maracujohnnie",
       "preco": "34,90",
       "descricao": "Whisky Johnnie Walker Blonde, polpa de maracujá fresco e refrigerante Schweppes citrus gelado com gelo cristalino.",
-      "foto": "maracujohnnie.webp"
+      "foto": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "caipira_obrigatoria",
@@ -308,7 +308,7 @@
       "nome": "Caipirinha Obrigatória",
       "preco": "30,00",
       "descricao": "Vodka Smirnoff misturada com infusão de maracujá fresco e morangos selecionados macerados com açúcar.",
-      "foto": "caipira_obrigatoria.webp"
+      "foto": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "aperol_spritz",
@@ -316,7 +316,7 @@
       "nome": "Aperol Spritz",
       "preco": "34,00",
       "descricao": "Aperol, espumante Brut borbulhante, água com gás e fatia de laranja bahia fresca.",
-      "foto": "aperol.webp"
+      "foto": "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "churros_gourmet",
@@ -325,7 +325,7 @@
       "preco": "15,00",
       "destaque": "Queridinho da Praia",
       "descricao": "Mini churros crocantes polvilhados com açúcar e canela, servidos quentinhos com doce de leite artesanal cremoso.",
-      "foto": "churros.webp"
+      "foto": "https://images.unsplash.com/photo-1624300629298-e9de39c13be5?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "acai_tigela",
@@ -334,7 +334,7 @@
       "preco": "35,00",
       "destaque": "Pós-Surf / Energia",
       "descricao": "Cremoso e bem gelado, acompanhado de banana em rodelas, granola crocante, leite em pó e leite condensado. (Opção 200ml por R$ 25).",
-      "foto": "acai.webp"
+      "foto": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80"
     },
     {
       "id": "petit_gateau",
@@ -342,7 +342,7 @@
       "nome": "Petit Gateau com Sorvete",
       "preco": "28,00",
       "descricao": "Bolinho de chocolate com recheio cremoso escorrendo, servido com bola de sorvete de creme e calda de chocolate.",
-      "foto": "petit_gateau.webp"
+      "foto": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
     }
   ]
 }
