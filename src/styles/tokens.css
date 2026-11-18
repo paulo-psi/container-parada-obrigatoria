@@ -1,0 +1,62 @@
+/**
+ * Container Parada Obrigatória — Design Tokens
+ * Identidade visual tropical-industrial marítima inspirada no container beira-mar,
+ * sombra de árvores nativas, mar de Canto Grande e chopp artesanal trincando.
+ */
+
+:root {
+  /* Paleta Base: Container & Superfícies Noturnas */
+  --color-container-dark: #14181E;
+  --color-container-surface: #1E232B;
+  --color-container-elevated: #282E38;
+  --color-container-border: rgba(255, 255, 255, 0.08);
+  --color-container-border-glow: rgba(245, 166, 35, 0.3);
+
+  /* Paleta Dourada: Chopp Gelado, Pôr do Sol & Acentos */
+  --color-gold-amber: #F5A623;
+  --color-gold-hover: #E59515;
+  --color-gold-dark: #C97E0C;
+  --color-gold-light: #FDE8C7;
+  --color-gold-glow: rgba(245, 166, 35, 0.25);
+
+  /* Paleta Marítima: Oceano de Canto Grande & Mariscal */
+  --color-ocean-deep: #0D2638;
+  --color-ocean-navy: #153C58;
+  --color-ocean-teal: #1C658C;
+  --color-ocean-soft: #E8F2F8;
+
+  /* Paleta Natureza: Areia, Madeira de Deck & Sombra das Árvores */
+  --color-sand-bg: #F9F7F3;
+  --color-sand-surface: #FFFFFF;
+  --color-wood-deck: #8A5A36;
+  --color-tree-shade: #2B5741;
+  --color-tree-shade-light: #EBF4EE;
+
+  /* Tipografia & Textos */
+  --color-text-dark: #16191E;
+  --color-text-secondary: #58616E;
+  --color-text-muted: #8E98A5;
+  --color-text-light: #F3F4F6;
+  --color-text-light-muted: #9CA3AF;
+
+  /* Fontes Oficiais */
+  --font-display: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Espaçamentos e Raios */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.12);
+  --shadow-gold: 0 10px 25px -4px rgba(245, 166, 35, 0.35);
+  --shadow-float: 0 20px 40px -10px rgba(0, 0, 0, 0.28);
+
+  /* Transições suaves */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}

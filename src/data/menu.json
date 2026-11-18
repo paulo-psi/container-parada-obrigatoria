@@ -1,0 +1,348 @@
+{
+  "categorias": [
+    {
+      "id": "peixes_frutos_do_mar",
+      "nome": "Pescados & Frutos do Mar",
+      "icone": "fish",
+      "descricao": "Pescados frescos e clássicos litorâneos preparados na hora, servidos à la carte com acompanhamentos nobres."
+    },
+    {
+      "id": "carnes_grelhados",
+      "nome": "Carnes & Grelhados",
+      "icone": "flame",
+      "descricao": "Cortes nobres preparados na brasa e chapa quente, suculentos e bem servidos."
+    },
+    {
+      "id": "hamburgueres",
+      "nome": "Hambúrgueres Artesanais",
+      "icone": "beef",
+      "descricao": "Pão brioche tostado na manteiga, blend da casa 150g no ponto certo e acompanhados de fritas crocantes."
+    },
+    {
+      "id": "petiscos_empanadas",
+      "nome": "Petiscos & Empanadas",
+      "icone": "utensils",
+      "descricao": "Tábuas gigantes para compartilhar na areia, pastéis crocantes com maionese caseira e autênticas empanadas argentinas."
+    },
+    {
+      "id": "chopes_drinks",
+      "nome": "Chopes, Drinks & Bar",
+      "icone": "beer",
+      "descricao": "Chopp artesanal trincando de gelado, torres de 1L e 2L, coquetelaria autoral e caipirinhas tropicais."
+    },
+    {
+      "id": "sobremesas_cafes",
+      "nome": "Cafés & Sobremesas",
+      "icone": "coffee",
+      "descricao": "Para adoçar o dia na praia: churros gourmet, petit gateau, açaí bem gelado e crepes franceses."
+    }
+  ],
+  "itens": [
+    {
+      "id": "anchova_grelhada",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Anchova Grelhada Especial",
+      "preco": "139,00",
+      "serve": "2 pessoas",
+      "destaque": "Carro-Chefe da Casa",
+      "descricao": "Anchova fresca grelhada no ponto perfeito com tempero da casa. Acompanha arroz branco soltinho, pirão de peixe tradicional de Bombinhas, batata sauté e salada mista fresca.",
+      "foto": "anchova.webp"
+    },
+    {
+      "id": "polvo_galega",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Polvo à Galega (400g)",
+      "preco": "199,00",
+      "serve": "2 pessoas",
+      "destaque": "Alta Gastronomia",
+      "descricao": "Tentáculos de polvo macios e dourados com azeite de oliva extra virgem e páprica. Acompanha batatas inglesas cozidas no vapor.",
+      "foto": "polvo.webp"
+    },
+    {
+      "id": "camarao_milanesa",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Camarão à Milanesa",
+      "preco": "129,00",
+      "serve": "2 pessoas",
+      "destaque": "Mais Pedido na Orla",
+      "descricao": "Camarões selecionados empanados em crosta dourada e sequinha. Acompanha batata frita, arroz, feijão e salada mista.",
+      "foto": "camarao.webp"
+    },
+    {
+      "id": "salmao_maracuja",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Salmão ao Molho de Maracujá",
+      "preco": "159,00",
+      "serve": "2 pessoas",
+      "descricao": "Filé de salmão grelhado regado com molho agridoce suave de maracujá fresco. Acompanha batata sauté, arroz, pirão e salada mista.",
+      "foto": "salmao.webp"
+    },
+    {
+      "id": "tilapia_grelhada",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Tilápia Grelhada Nobre",
+      "preco": "179,00",
+      "serve": "2 pessoas",
+      "descricao": "Filé generoso de tilápia fresca grelhada na manteiga de ervas. Acompanha batata sauté, arroz, pirão e salada mista.",
+      "foto": "tilapia.webp"
+    },
+    {
+      "id": "camarao_pistola",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Camarão Pistola ao Bafo ou Alho & Óleo (400g)",
+      "preco": "159,00",
+      "serve": "Petisco",
+      "destaque": "Clássico da Praia",
+      "descricao": "Camarões pistola inteiros preparados ao bafo com limão ou salteados no alho e azeite de oliva.",
+      "foto": "pistola.webp"
+    },
+    {
+      "id": "camarao_panko",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Camarão Crocante em Farinha Panko (400g)",
+      "preco": "139,00",
+      "serve": "Petisco",
+      "descricao": "Camarões graúdos empanados na farinha panko japonesa ultra crocante. Acompanha molho tártaro artesanal.",
+      "foto": "panko.webp"
+    },
+    {
+      "id": "lula_dourada",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Lula à Dorê (400g)",
+      "preco": "110,00",
+      "serve": "Petisco",
+      "descricao": "Anéis de lula tenros empanados e fritos no ponto exato com limão taiti fresco.",
+      "foto": "lula.webp"
+    },
+    {
+      "id": "ostras_gratinadas",
+      "categoria": "peixes_frutos_do_mar",
+      "nome": "Ostras Gratinadas (6 unidades)",
+      "preco": "69,90",
+      "serve": "Entrada",
+      "descricao": "Ostras nativas de cultivo catarinense gratinadas com queijo parmesão e ervas finas.",
+      "foto": "ostras.webp"
+    },
+    {
+      "id": "picanha_chapa",
+      "categoria": "carnes_grelhados",
+      "nome": "Picanha na Chapa Nobre",
+      "preco": "169,00",
+      "serve": "2 pessoas",
+      "destaque": "Corte Nobre",
+      "descricao": "Fatias espessas de picanha de primeira seladas ao ponto na chapa bem quente. Acompanha batata frita crocante, arroz, feijão, farofa temperada, salada mista e molho da casa.",
+      "foto": "picanha.webp"
+    },
+    {
+      "id": "frango_parmegiana",
+      "categoria": "carnes_grelhados",
+      "nome": "Parmegiana da Parada",
+      "preco": "95,00",
+      "serve": "2 pessoas",
+      "destaque": "Eleita a Melhor da Região",
+      "descricao": "Filé de frango empanado artesanal, coberto com molho de tomate pelati caseiro e queijo derretido em abundância. Acompanha polenta frita, arroz, feijão e salada mista.",
+      "foto": "parmegiana.webp"
+    },
+    {
+      "id": "contra_file",
+      "categoria": "carnes_grelhados",
+      "nome": "Contra Filé Grelhado",
+      "preco": "119,00",
+      "serve": "2 pessoas",
+      "descricao": "Bife de contrafilé macio e suculento com alho confitado. Acompanha batata frita, arroz, feijão e salada mista.",
+      "foto": "contrafile.webp"
+    },
+    {
+      "id": "bisteca_carre",
+      "categoria": "carnes_grelhados",
+      "nome": "Bisteca de Carré Suíno",
+      "preco": "129,00",
+      "serve": "2 pessoas",
+      "descricao": "Carré suíno grelhado com molho barbecue especial. Acompanha polenta crocante, arroz, feijão, salada mista e farofa.",
+      "foto": "carre.webp"
+    },
+    {
+      "id": "burguer_obrigatorio",
+      "categoria": "hamburgueres",
+      "nome": "Burguer Obrigatório e Fritas",
+      "preco": "55,00",
+      "destaque": "Especial da Casa",
+      "descricao": "Pão brioche selado, hambúrguer artesanal da casa 150g, fatias de bacon crocante, cheddar cremoso, mozzarella, maionese artesanal, alface, tomate, picles e cebola roxa. Acompanha fritas.",
+      "foto": "burguer_obrigatorio.webp"
+    },
+    {
+      "id": "burguer_melt_crispy",
+      "categoria": "hamburgueres",
+      "nome": "Burguer Melt Crispy e Fritas",
+      "preco": "58,00",
+      "destaque": "Sucesso de Pedidos",
+      "descricao": "Pão brioche, blend 150g, bacon crocante, cheddar derretido, maionese especial, cebola crispy dourada e um irresistível toque de melado de cana. Acompanha fritas.",
+      "foto": "burguer_melt.webp"
+    },
+    {
+      "id": "burguer_duplo",
+      "categoria": "hamburgueres",
+      "nome": "Burguer Duplo 300g e Fritas",
+      "preco": "49,00",
+      "descricao": "Dois hambúrgueres artesanais de 150g (300g total de carne pura), maionese da casa, mozzarella derretida, alface e tomate no pão brioche. Acompanha fritas.",
+      "foto": "burguer_duplo.webp"
+    },
+    {
+      "id": "burguer_bacon",
+      "categoria": "hamburgueres",
+      "nome": "Burguer Bacon e Fritas",
+      "preco": "48,00",
+      "descricao": "Pão brioche, hambúrguer 150g, fatias generosas de bacon artesanal, maionese, mozzarella, alface e tomate fresco. Acompanha fritas.",
+      "foto": "burguer_bacon.webp"
+    },
+    {
+      "id": "burguer_vegetariano",
+      "categoria": "hamburgueres",
+      "nome": "Burguer Vegetariano e Fritas",
+      "preco": "42,00",
+      "descricao": "Pão brioche, ovo frito no ponto, maionese, cebola roxa, alface, tomate, picles e cenoura ralada fresca. Acompanha fritas.",
+      "foto": "burguer_veg.webp"
+    },
+    {
+      "id": "burguer_kids",
+      "categoria": "hamburgueres",
+      "nome": "Burguer Kids",
+      "preco": "26,00",
+      "descricao": "Pão brioche macio, hambúrguer da casa 100g bem passado, queijo mozzarella e maionese suave.",
+      "foto": "burguer_kids.webp"
+    },
+    {
+      "id": "tabua_parada",
+      "categoria": "petiscos_empanadas",
+      "nome": "Tábua da Parada (2.0 kg)",
+      "preco": "289,00",
+      "serve": "4 a 6 pessoas",
+      "destaque": "A Maior da Orla",
+      "descricao": "O banquete definitivo da praia: camarão à milanesa, anéis de lula, iscas de peixe, marisco à milanesa, bolinhos de peixe artesanais, bolinhos de camarão com queijo e batata frita crocante.",
+      "foto": "tabua_parada.webp"
+    },
+    {
+      "id": "trevo_container",
+      "categoria": "petiscos_empanadas",
+      "nome": "Trevo Contâiner (1.2 kg)",
+      "preco": "189,00",
+      "serve": "3 a 4 pessoas",
+      "descricao": "Combinação campeã com camarão sequinho, anéis de lula fritos, iscas de peixe empanadas e batata frita bem servida.",
+      "foto": "trevo.webp"
+    },
+    {
+      "id": "empanadas_argentinas",
+      "categoria": "petiscos_empanadas",
+      "nome": "Empanadas Argentinas Artesanais",
+      "preco": "16,00",
+      "serve": "Unidade",
+      "destaque": "Tradição Portenha",
+      "descricao": "Massa folhada artesanal dourada no forno nos sabores clássicos: Carne Tradicional, Caprese, Frango Suave e Calabresa com Queijo.",
+      "foto": "empanadas.webp"
+    },
+    {
+      "id": "pasteis_especiais",
+      "categoria": "petiscos_empanadas",
+      "nome": "Pastéis da Casa com Maionese Artesanal",
+      "preco": "26,00",
+      "serve": "Unidade",
+      "descricao": "Pastel grande de feira frito na hora com massa crocante nos recheios: Queijo, Carne, Frango, 4 Queijos (R$ 32) ou Camarão com Catupiry (R$ 39). Acompanha maionese verde caseira.",
+      "foto": "pastel.webp"
+    },
+    {
+      "id": "chopp_pilsen",
+      "categoria": "chopes_drinks",
+      "nome": "Chopp Pilsen Premium (400ml)",
+      "preco": "16,00",
+      "destaque": "Trincando de Gelado",
+      "descricao": "Corpo leve, espuma cremosa e colarinho perfeito. Ideal para refrescar a tarde quente de praia em Canto Grande.",
+      "foto": "chopp_pilsen.webp"
+    },
+    {
+      "id": "torre_chopp",
+      "categoria": "chopes_drinks",
+      "nome": "Torre de Chopp Pilsen (2 Litros)",
+      "preco": "76,00",
+      "serve": "Galera / Mesa",
+      "destaque": "Chopp Gelado até o Fim",
+      "descricao": "Torre térmica iluminada com tubo congelador interno para manter os 2 litros de chopp estupidamente gelados até o último copo. (Opção de 1L por R$ 39).",
+      "foto": "torre_chopp.webp"
+    },
+    {
+      "id": "chopp_ipa",
+      "categoria": "chopes_drinks",
+      "nome": "Chopp Session IPA (400ml)",
+      "preco": "18,00",
+      "descricao": "Chopp artesanal lupulado com notas cítricas e tropicais. Corpo médio-baixo, extremamente refrescante para o clima de praia.",
+      "foto": "chopp_ipa.webp"
+    },
+    {
+      "id": "chopp_vinho_rose",
+      "categoria": "chopes_drinks",
+      "nome": "Chopp de Vinho Rosé 'Safra Rosé' (1,5L)",
+      "preco": "45,00",
+      "destaque": "Sabor de Verão o Ano Todo",
+      "descricao": "Mistura especial de uvas nobres com leveza e notas frutadas com a refrescância do espumante.",
+      "foto": "chopp_rose.webp"
+    },
+    {
+      "id": "pina_colada_abacaxi",
+      "categoria": "chopes_drinks",
+      "nome": "Pina Colada no Abacaxi Natural",
+      "preco": "39,00",
+      "destaque": "Instagramável",
+      "descricao": "Rum Bacardi, leite de coco, abacaxi e leite condensado servidos esculpidos dentro da própria fruta inteira.",
+      "foto": "pina_colada.webp"
+    },
+    {
+      "id": "maracujohnnie",
+      "categoria": "chopes_drinks",
+      "nome": "Maracujohnnie",
+      "preco": "34,90",
+      "descricao": "Whisky Johnnie Walker Blonde, polpa de maracujá fresco e refrigerante Schweppes citrus gelado com gelo cristalino.",
+      "foto": "maracujohnnie.webp"
+    },
+    {
+      "id": "caipira_obrigatoria",
+      "categoria": "chopes_drinks",
+      "nome": "Caipirinha Obrigatória",
+      "preco": "30,00",
+      "descricao": "Vodka Smirnoff misturada com infusão de maracujá fresco e morangos selecionados macerados com açúcar.",
+      "foto": "caipira_obrigatoria.webp"
+    },
+    {
+      "id": "aperol_spritz",
+      "categoria": "chopes_drinks",
+      "nome": "Aperol Spritz",
+      "preco": "34,00",
+      "descricao": "Aperol, espumante Brut borbulhante, água com gás e fatia de laranja bahia fresca.",
+      "foto": "aperol.webp"
+    },
+    {
+      "id": "churros_gourmet",
+      "categoria": "sobremesas_cafes",
+      "nome": "Churros Gourmet (Porção com 7 mini)",
+      "preco": "15,00",
+      "destaque": "Queridinho da Praia",
+      "descricao": "Mini churros crocantes polvilhados com açúcar e canela, servidos quentinhos com doce de leite artesanal cremoso.",
+      "foto": "churros.webp"
+    },
+    {
+      "id": "acai_tigela",
+      "categoria": "sobremesas_cafes",
+      "nome": "Açaí na Tigela Puro (400ml)",
+      "preco": "35,00",
+      "destaque": "Pós-Surf / Energia",
+      "descricao": "Cremoso e bem gelado, acompanhado de banana em rodelas, granola crocante, leite em pó e leite condensado. (Opção 200ml por R$ 25).",
+      "foto": "acai.webp"
+    },
+    {
+      "id": "petit_gateau",
+      "categoria": "sobremesas_cafes",
+      "nome": "Petit Gateau com Sorvete",
+      "preco": "28,00",
+      "descricao": "Bolinho de chocolate com recheio cremoso escorrendo, servido com bola de sorvete de creme e calda de chocolate.",
+      "foto": "petit_gateau.webp"
+    }
+  ]
+}
